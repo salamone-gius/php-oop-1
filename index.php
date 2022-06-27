@@ -2,6 +2,13 @@
 
     require_once __DIR__ . '/classes/Movie.php';
 
+    $movies = [
+        new Movie('Kingsman: The Secret Service', 'spy-fiction', 2014),
+        new Movie('Murder on the Orient Express', 'crime-thriller', 2017),
+        new Movie('Uncharted', 'adventure', 2022),
+    ];
+
+    var_dump($movies);
 ?>
 
 
