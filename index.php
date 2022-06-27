@@ -8,7 +8,7 @@
         new Movie('Uncharted', 'adventure', 2022),
     ];
 
-    var_dump($movies);
+    // var_dump($movies);
 ?>
 
 
@@ -21,6 +21,15 @@
         <title>OOP-1</title>
     </head>
     <body>
-        
+        <h1 style="text-align:center;">Movies</h1>
+        <ul>
+            <?php foreach ($movies as $movie) { ?>
+                <li>
+                    <h2 style="margin-top: 40px;"><?php echo $movie->title; ?></h2>
+                    <p>Genre: <?php echo $movie->genre; ?></p>
+                    <p>Year: <?php echo $movie->getYear(); ?></p>
+                </li>
+            <?php }; ?>
+        </ul>
     </body>
 </html>
